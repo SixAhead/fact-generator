@@ -1,8 +1,8 @@
 function getFact() {
-    fetch("http://localhost:3000/fact") // Fetch a fact from the server
-        .then(response => response.json()) // Convert response to JSON
+    fetch("https://fact-generator-3um1.onrender.com/fact")  // ✅ Use the live server URL
+        .then(response => response.json())
         .then(data => {
-            document.getElementById("fact").innerText = data.fact; // Update the page with the fact
+            document.getElementById("fact").innerText = data.fact;
         })
-        .catch(error => console.error("Error fetching fact:", error)); // Handle errors
+        .catch(error => console.error("Error fetching fact:", error));
 }

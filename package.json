@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/node-fetch": "^2.6.12",
+    "electron": "^35.0.2",
+    "electron-installer-windows": "^3.0.0"
+  },
+  "name": "coding-projects",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "package": "electron-packager . MyFactApp --platform=win32 --arch=x64 --overwrite --out=dist && copy Facts.json dist/MyFactApp-win32-x64/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "John Duggan",
+  "license": "ISC",
+  "description": "A fun fact generator app!"
+}
